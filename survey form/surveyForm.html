@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Survey Form</title>
+    <link rel="stylesheet" href="surv-form-styles.css">
+</head>
+<body>
+    <div id="main">
+        <h1 id="title"> Survey Form</h1>
+        <p id="description"><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus reiciendis in ullam labore asperiores eius quidem, totam molestias dolor omnis, atque pariatur dolores natus temporibus tempore cum optio minima nemo.</em></p>
+        <form action="" id="survey-form">
+            
+            <div class="container">
+                <label for="" id="name-label">Name </label>
+                <input type="text" id="name" placeholder='Enter your name'>
+                <label for="" id="email-label">Email  </label>
+                <input type="email" id="email" placeholder='Enter your email'>
+                <label for="" id="number-label" >Age  </label>
+                <input type="number" id="number" placeholder='Enter your age' min=18 max=85>
+            </div>
+    
+            <!-- dropdown -->
+            <div class="dropdown">
+                <label for="cars">Select you favorite</label>
+                <select name="band" id="dropdown">
+                    <option value=disable>Select a Band...</option>
+                    <option value="artic-monkeys">Artic Monkeys</option>
+                    <option value="gorillaz">Gorillaz</option>
+                    <option value="imagine-dragons">Imagine Dragons</option>
+                    <option value="RHCP">Red Hot Chili Peppers</option>
+                </select> 
+            </div>
+    
+            <!-- radio button group -->
+            <div class="radio-b-group">
+                <p>Choose you favorite</p>
+                <div>
+                    <input type="radio" id="callejeros" name="latin-music" value="callejeros">
+                    <label for="callejeros">Callejeros</label>
+                </div>
+                <div>
+                    <input type="radio" id="cuarteto-de-nos" name="latin-music" value="cuarteto-de-nos">
+                    <label for="cuarteto-de-nos">Cuarteto de Nos</label>
+                </div>
+                <div>
+                    <input type="radio" id="la-vela-puerca" name="latin-music" value="la-vela-puerca" checked>
+                    <label for="la-vela-puerca">La Vela Puerca</label>
+                </div>
+                <div>
+                    <input type="radio" id="la-mona" name="latin-music" value="la-mona" checked>
+                    <label for="la-mona">La Mona</label>
+                </div>
+            </div>
+    
+            <!-- checkboxs -->
+            <div class="checkboxs">
+                <p>Choose the sports you played (Check all that apply)</p>
+                <div>
+                    <input type="checkbox" id="alpine-ski" name="alpine-ski" checked>
+                    <label for="alpine-ski">Alpine Ski</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="ski-touring" name="ski-touring">
+                    <label for="ski-touring">Ski Touring</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="pelota-paleta" name="pelota-paleta">
+                    <label for="pelota-paleta">Pelota Paleta</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="trekking" name="trekking">
+                    <label for="trekking">Trekking</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="paddle" name="paddle">
+                    <label for="paddle">Paddle</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="rock-climbing" name="rock-climbing">
+                    <label for="rock-climbing">Rock-Climbing</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="scuba-diving" name="scuba-diving">
+                    <label for="scuba-diving">Scuba Diving</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="voleyball" name="voleyball">
+                    <label for="voleyball">Voleyball</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="handball" name="handball">
+                    <label for="handball">Handball</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="football" name="football">
+                    <label for="football">Football</label>
+                </div>
+            </div>
+    
+            <!-- text area -->
+            <div class="text-area">
+                <textarea name="textarea" rows="10" cols="50">Write something here...</textarea>
+            </div>
+    
+            <!-- submit button -->
+            <button id="submit" type="submit">Submit</button>
+    
+        </form>
+    </div>
+</body>
+</html>
